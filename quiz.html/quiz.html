@@ -14,170 +14,158 @@
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+<header>
 
-    <header>
+    <h1>🚦 Traffic Sense</h1>
 
-        <h1>🚦 Traffic Sense</h1>
+    <p>Pre-Test Assessment</p>
 
-        <p>Pre-Test Assessment</p>
+</header>
 
-    </header>
+<section class="user-details">
 
+<h2>Enter Your Details</h2>
 
-    <!-- ================= USER DETAILS ================= -->
+<form id="userForm">
 
-    <section class="user-details">
+<label for="name">Full Name</label>
 
-        <h2>Enter Your Details</h2>
+<input
+type="text"
+id="name"
+placeholder="Enter your name"
+required>
 
-        <form>
+<label for="age">Age</label>
 
-            <label>Full Name</label>
+<input
+type="number"
+id="age"
+placeholder="Enter your age"
+required>
 
-            <input
-                type="text"
-                placeholder="Enter your full name"
-                required>
+<label for="city">City</label>
 
-            <label>Age</label>
+<input
+type="text"
+id="city"
+placeholder="Enter your city">
 
-            <input
-                type="number"
-                placeholder="Enter your age"
-                required>
+<label for="vehicle">
 
-            <label>City</label>
+Vehicle Type
 
-            <input
-                type="text"
-                placeholder="Enter your city">
+</label>
 
-            <label>Vehicle Type</label>
+<select id="vehicle">
 
-            <select>
+<option>Two Wheeler</option>
 
-                <option>Select</option>
+<option>Car</option>
 
-                <option>Two Wheeler</option>
+<option>Commercial Vehicle</option>
 
-                <option>Car</option>
+<option>I Don't Drive Yet</option>
 
-                <option>Commercial Vehicle</option>
+</select>
 
-                <option>I Don't Drive Yet</option>
+</form>
 
-            </select>
+</section>
 
-        </form>
+<section class="quiz-container">
 
-    </section>
+<h2>Traffic Rules Quiz</h2>
 
+<form id="quizForm">
 
+<!-- Question 1 -->
 
-    <!-- ================= QUIZ ================= -->
+<div class="question">
 
-    <section class="quiz-container">
+<h3>1. What does a red traffic light mean?</h3>
 
-        <h2>Traffic Rules Quiz</h2>
+<label><input type="radio" name="q1" value="Stop"> Stop</label>
 
+<label><input type="radio" name="q1" value="Go"> Go</label>
 
-        <!-- Question 1 -->
+<label><input type="radio" name="q1" value="Slow"> Slow Down</label>
 
-        <div class="question">
+<label><input type="radio" name="q1" value="Turn"> Turn Right</label>
 
-            <h3>1. What does a red traffic light indicate?</h3>
+</div>
 
-            <label><input type="radio" name="q1"> Stop</label>
+<!-- Question 2 -->
 
-            <label><input type="radio" name="q1"> Slow Down</label>
+<div class="question">
 
-            <label><input type="radio" name="q1"> Go</label>
+<h3>2. Why should riders wear helmets?</h3>
 
-            <label><input type="radio" name="q1"> Turn Right</label>
+<label><input type="radio" name="q2" value="Safety"> For Safety</label>
 
-        </div>
+<label><input type="radio" name="q2" value="Fashion"> For Fashion</label>
 
+<label><input type="radio" name="q2" value="Weather"> For Weather</label>
 
-        <!-- Question 2 -->
+<label><input type="radio" name="q2" value="Style"> For Style</label>
 
-        <div class="question">
+</div>
 
-            <h3>2. Why should you wear a helmet?</h3>
+<!-- Question 3 -->
 
-            <label><input type="radio" name="q2"> Style</label>
+<div class="question">
 
-            <label><input type="radio" name="q2"> Safety</label>
+<h3>3. Who should wear seat belts?</h3>
 
-            <label><input type="radio" name="q2"> Weather</label>
+<label><input type="radio" name="q3" value="Everyone"> Everyone</label>
 
-            <label><input type="radio" name="q2"> None</label>
+<label><input type="radio" name="q3" value="Driver"> Driver Only</label>
 
-        </div>
+<label><input type="radio" name="q3" value="Front"> Front Passenger</label>
 
+<label><input type="radio" name="q3" value="Children"> Children Only</label>
 
-        <!-- Question 3 -->
+</div>
 
-        <div class="question">
+<!-- Question 4 -->
 
-            <h3>3. Seat belts should be worn by?</h3>
+<div class="question">
 
-            <label><input type="radio" name="q3"> Driver Only</label>
+<h3>4. Is using a mobile phone while driving safe?</h3>
 
-            <label><input type="radio" name="q3"> Front Passenger</label>
+<label><input type="radio" name="q4" value="No"> No</label>
 
-            <label><input type="radio" name="q3"> Everyone in the Vehicle</label>
+<label><input type="radio" name="q4" value="Yes"> Yes</label>
 
-            <label><input type="radio" name="q3"> Children Only</label>
+</div>
 
-        </div>
+<!-- Question 5 -->
 
+<div class="question">
 
-        <!-- Question 4 -->
+<h3>5. Why are speed limits important?</h3>
 
-        <div class="question">
+<label><input type="radio" name="q5" value="Safety"> Improve Safety</label>
 
-            <h3>4. Mobile phones while driving are?</h3>
+<label><input type="radio" name="q5" value="Race"> Drive Faster</label>
 
-            <label><input type="radio" name="q4"> Safe</label>
+<label><input type="radio" name="q5" value="Fuel"> Save Fuel Only</label>
 
-            <label><input type="radio" name="q4"> Dangerous</label>
+<label><input type="radio" name="q5" value="Nothing"> Nothing</label>
 
-            <label><input type="radio" name="q4"> Recommended</label>
+</div>
 
-            <label><input type="radio" name="q4"> Necessary</label>
+<button type="button" id="submitQuiz">
 
-        </div>
+Submit Quiz
 
+</button>
 
-        <!-- Question 5 -->
+</form>
 
-        <div class="question">
+</section>
 
-            <h3>5. Speed limits are meant to?</h3>
-
-            <label><input type="radio" name="q5"> Increase Speed</label>
-
-            <label><input type="radio" name="q5"> Improve Safety</label>
-
-            <label><input type="radio" name="q5"> Save Fuel Only</label>
-
-            <label><input type="radio" name="q5"> None</label>
-
-        </div>
-
-
-        <button id="submitQuiz">
-
-            Submit Quiz
-
-        </button>
-
-    </section>
-
-
-
-    <script src="js/quiz.js"></script>
+<script src="js/quiz.js"></script>
 
 </body>
 
