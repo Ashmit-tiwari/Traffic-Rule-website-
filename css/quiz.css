@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+
+    background:#0F172A;
+    color:white;
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+
+    background:#111827;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+header h1{
+
+    color:#38BDF8;
+
+    font-size:40px;
+
+}
+
+header p{
+
+    color:#CBD5E1;
+
+}
+
+/* ===========================
+   USER DETAILS
+=========================== */
+
+.user-details{
+
+    width:80%;
+
+    margin:40px auto;
+
+    background:#1E293B;
+
+    padding:30px;
+
+    border-radius:12px;
+
+}
+
+.user-details h2{
+
+    margin-bottom:20px;
+
+    text-align:center;
+
+}
+
+.user-details form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.user-details input,
+.user-details select{
+
+    padding:12px;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:16px;
+
+}
+
+/* ===========================
+   QUIZ
+=========================== */
+
+.quiz-container{
+
+    width:80%;
+
+    margin:40px auto;
+
+}
+
+.question{
+
+    background:#1E293B;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    margin-bottom:25px;
+
+}
+
+.question h3{
+
+    margin-bottom:15px;
+
+}
+
+.question label{
+
+    display:block;
+
+    margin:10px 0;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+#submitQuiz{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#submitQuiz:hover{
+
+    background:#1D4ED8;
+
+}
