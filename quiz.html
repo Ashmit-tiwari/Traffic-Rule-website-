@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Traffic Sense | Pre-Test</title>
+
+    <link rel="stylesheet" href="css/quiz.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>🚦 Traffic Sense</h1>
+
+        <p>Test Your Knowledge Before Learning</p>
+
+    </header>
+
+    <section class="user-details">
+
+        <h2>Enter Your Details</h2>
+
+        <form id="userForm">
+
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required>
+
+            <label for="age">Age</label>
+            <input
+                type="number"
+                id="age"
+                placeholder="Enter your age"
+                required>
+
+            <label for="city">City</label>
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter your city">
+
+            <label for="vehicle">Vehicle Type</label>
+
+            <select id="vehicle">
+
+                <option value="Two Wheeler">Two Wheeler</option>
+                <option value="Car">Car</option>
+                <option value="Commercial Vehicle">Commercial Vehicle</option>
+                <option value="I Don't Drive Yet">I Don't Drive Yet</option>
+
+            </select>
+
+        </form>
+
+    </section>
+
+
+    <section class="quiz-container">
+
+        <h2>Traffic Rules Pre-Test</h2>
+
+        <form id="quizForm">
+
+            <!-- Question 1 -->
+
+            <div class="question">
+
+                <h3>1. What does a red traffic signal mean?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="Stop">
+                    Stop
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="Go">
+                    Go
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="Slow">
+                    Slow Down
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="Turn">
+                    Turn Right
+                </label>
+
+            </div>
+
+            <!-- Question 2 -->
+
+            <div class="question">
+
+                <h3>2. Why should riders wear helmets?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="Safety">
+                    For Safety
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="Fashion">
+                    For Fashion
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="Weather">
+                    For Weather
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="Style">
+                    For Style
+                </label>
+
+            </div>
+
+            <!-- Question 3 -->
+
+            <div class="question">
+
+                <h3>3. Who should wear seat belts?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="Everyone">
+                    Everyone in the Vehicle
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="Driver">
+                    Driver Only
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="Front">
+                    Front Passenger Only
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="Children">
+                    Children Only
+                </label>
+
+            </div>
+
+            <!-- Question 4 -->
+
+            <div class="question">
+
+                <h3>4. Is it safe to use a mobile phone while driving?</h3>
+
+                <label>
+                    <input type="radio" name="q4" value="No">
+                    No
+                </label>
+
+                <label>
+                    <input type="radio" name="q4" value="Yes">
+                    Yes
+                </label>
+
+            </div>
+
+            <!-- Question 5 -->
+
+            <div class="question">
+
+                <h3>5. Why are speed limits important?</h3>
+
+                <label>
+                    <input type="radio" name="q5" value="Safety">
+                    Improve Safety
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="Race">
+                    Drive Faster
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="Fuel">
+                    Save Fuel Only
+                </label>
+
+                <label>
+                    <input type="radio" name="q5" value="Nothing">
+                    Nothing
+                </label>
+
+            </div>
+
+            <button type="button" id="submitQuiz">
+
+                Submit Quiz
+
+            </button>
+
+        </form>
+
+    </section>
+
+    <script src="js/quiz.js"></script>
+
+</body>
+
+</html>
